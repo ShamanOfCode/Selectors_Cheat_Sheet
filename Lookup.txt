@@ -1,0 +1,38 @@
+CSS_Introduction:
+
+class: 	a CSS class selector describes a behavior that is not unique
+		many elements can "extend" a class to represent a similiar or even identical behavior
+		many elements can be a part of one class
+
+id:		id's in CSS are used to define a unique behavior which differs from any other HTML element
+		id's are selectors which can't occur more than once and can only be used on exactly one element
+		multiple can't share one id
+		id's can only be used once
+
+order:	CSS is being executed line by line in order from top to bottom
+		(but keep in mind that different specifications can change values in some cases)
+
+
+#id:							selecting an id
+#id element:					selecting an element within an element with the id
+.class:							selecting a class
+element:						selecting an element
+*:								selecting everything
+element, element:				selecting multiple elements
+element1 element2:				selecting any element2 placed in element1 (no matter if element2 is a child of element1)
+element1 > element2:			selecting any element2 placed directly in element1 (element2 must be a child of element1)
+element1 + element2:			selecting any element2 placed directly after element1
+element1 *:						selecting all elements within element1
+element1.class:					selecting all elements element1 of a given class
+element:hover:					defines a changing behavior wshen we hover on it with the mouse
+element:empty:					selecting all empty elements
+element:first-child:			selecting the first child of an element
+element:last-child:				selecting the last child of an element
+element:nth-child(n):			selecting the child at the index n of the element (index starting at one)
+[attribute]:					selecting all elements which have the wanted attribute
+[attribute="value"]:			selecting all elements which have the wanted attribute with a specific value
+[attribute^="value"]:			selecting all elements which have the wanted attribute whose values start with a given value
+[attribute$="value"]:			selecting all elements which have the wanted attribute whose values end with a given value
+[attribute*="value"]:			selecting all elements which have the wanted attribute whose values contain a given value
+
+attribute: value !important;:	(not recommended?..?) defines a rule/value which can't be changed even by the order of execution
